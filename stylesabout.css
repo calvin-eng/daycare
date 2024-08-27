@@ -1,0 +1,605 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Top Header Bar Styles */
+.top-header-bar {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info i,
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #f8f9fa;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 0 80px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.nav-link {
+    color: #343a40;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: '\25BE';
+    margin-left: 0.5rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #343a40;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 25% ;
+    text-decoration: none;
+}
+
+/* Styles for the submit button */
+.btn-blue {
+    background-color: #007BFF; /* Blue color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.btn-blue:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.hero-section {
+    position: relative;
+    background-image: url('./images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 200px 0;
+    font-family: 'Helvetica', sans-serif;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section h1 {
+    position: relative;
+    font-size: 3rem;
+    margin: 0;
+    z-index: 2;
+}
+
+.hero-section p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section .container {
+    padding: 40px;
+    margin-left: 100px;
+}
+
+.contact-section {
+    padding: 100px 80px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.color-red {
+    color: #dc3545;
+}
+
+.contact-info .top-info {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.contact-info .contact-informations {
+    padding: 10px 0;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form form {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+form input,
+form textarea {
+    background-color: #f3f0f0;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.375rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: #2E4049;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 70px 80px;
+}
+
+.grouped-footer-container {
+    display: flex;
+    gap: 2rem;
+    background-color: #3f4d55;
+    padding: 30px 20px;
+    flex: 1;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h6,
+.footer-column h5 {
+    margin-top: 0;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin-top: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-link {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.footer-column .social-links {
+    margin-top: 10px;
+}
+
+.footer-column .social-link {
+    color: #ffffff;
+    background-color: #727272;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: small;
+    padding: 20px;
+    background-color: #2E4049;
+    border-top: .5px solid #5e5b5b;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensure the content wraps on smaller screens */
+}
+
+.about-info {
+    flex: 1; /* Make the about-info section flexible */
+    max-width: 600px;
+}
+
+.about-info .about-us-tag {
+    color: #dc3545; /* Red color for "About Us" tag */
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Helvetica', sans-serif; /* Ensure font matches */
+}
+
+.about-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif; /* Ensure font matches */
+}
+
+.about-info p {
+    margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif; /* Ensure font matches */
+}
+
+.about-info .btn-blue {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Helvetica', sans-serif; /* Ensure font matches */
+}
+
+.about-quote {
+    flex: 1; /* Make the about-quote section flexible */
+    position: relative; /* Position for absolute positioning of quote box */
+    max-width: 400px; /* Limit the width of the quote section */
+}
+
+.about-quote blockquote {
+    position: absolute;
+    bottom: -30px;  
+    right: 60px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-left: 4px solid #00bcd4; /* Add a left border for emphasis */
+    padding: 20px;
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center; /* Center align the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for floating effect */
+    font-family: 'Helvetica', sans-serif; /* Ensure font matches */
+    z-index: 1;
+}
+
+.about-quote .about-image {
+    position: relative;
+    margin-top: 40px; /* Adjust the margin to place the image correctly */
+}
+
+.about-quote .about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Goals and Mission Section */
+.goals-mission-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.goals-mission-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.goal, .mission {
+    flex: 1;
+    max-width: 45%;
+}
+
+.goal h2, .mission h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.goal p, .mission p {
+    margin-bottom: 20px;
+}
+
+.goal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.goal ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.goal ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #00bcd4;
+    font-size: 20px;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mission p:last-child {
+    font-weight: bold;
+    font-size: 24px;
+    color: #00bcd4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .goals-mission-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .goal, .mission {
+        max-width: 100%;
+    }
+}
+
+
+.mission-quote {
+    flex: 1; /* Make the about-quote section flexible */
+    position: relative; /* Position for absolute positioning of quote box */
+    max-width: 400px; /* Limit the width of the quote section */
+}
+
+.mission-quote blockquote {
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-left: 4px solid #00bcd4; /* Add a left border for emphasis */
+    padding: 20px;
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center; /* Center align the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for floating effect */
+    font-family: 'Helvetica', sans-serif; /* Ensure font matches */
+    z-index: 1;
+}
+
+.mission-quote .about-image {
+    position: relative;
+    margin-top: 40px; /* Adjust the margin to place the image correctly */
+}
+
+.mission-quote .about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.volunteers-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.volunteers-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.volunteer, .become-volunteer {
+    width: 220px;
+}
+
+.volunteer img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.volunteer h3, .become-volunteer h3 {
+    margin: 10px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links .social-link {
+    margin: 0 5px;
+    color: #333;
+}
+
+.social-link:hover {
+    color: #007bff;
+}
+
+
+.newsletter-section {
+    background: url('./images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    
+}
+
+.newsletter-section .overlay {
+    
+    top: 100%;
+    bottom: 100%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(206, 17, 17, 0.5); /* Adjust the color and opacity as needed */
+    display: flex;
+    padding: 80px 0;
+}
+
+.newsletter-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter-section input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-section .btn-blue {
+    background-color: white;
+    color: #b30009;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Styles for the send button */
+.btn-black {
+    background-color: #000000; /* Black color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+
+
+
+
+.btn-black:hover {
+    background-color: #b30009; /* orange on hover */
+}
+
+
+
+
+

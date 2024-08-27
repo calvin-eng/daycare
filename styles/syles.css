@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #2e4049;
+}
+
+/*This is only the style for navigation header and footer*/
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    width: 60%;
+    padding: 25px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactBox{
+    width: 100%;
+    background-color: #77d7d3;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 14px;
+}
+
+.contactBox ul li, .contactBox ol li{
+    display: inline;
+    padding: 20px;
+    margin-right: -4px;
+}
+
+.contactBox ol li{
+    background-color: #4bc9c5;
+    color: #11615f;
+}
+
+.logo img {
+    width: 150px;
+    margin-top: -10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #2e4049;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px #ecf1f0 solid;
+}
+
+nav ul li a:hover {
+    color: #ff6d6d;
+    font-size: 16px;
+    transition: 0.5s ease;
+    font-weight: bold;
+}
+
+.DonateButton:hover{
+    background-color: #fff;
+}
+
+.DonateButton a{
+    color: #fff;
+    background-color: #ff6d6d;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+}
+
+.DonateButton a:hover{
+    color: #ff6d6d;
+    background-color: #ecf1f0;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2e404a;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+span {
+    width: 20%;
+    margin-top: 50px;
+    padding: 10px;
+    color: #fff;
+}
+
+span ul{
+    padding: 20px;
+}
+
+span ul li{
+    display: inline;
+    padding: 16px;
+    font-size: 16px;
+    background-color: #384c55;
+    border-radius: 50%;
+}
+
+span img{
+    width: 150px;
+}
+
+.footerLinks{
+    margin-top: 50px;
+    background-color: #384c55;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.footerLinks ul li{
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.footerLinks h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footerLinks a:hover{
+    color: #ff6d6d;
+    transition: 0.5s ease;
+}
+
+footer h2{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 10px;
+    border-top: 1px solid #fff;
+}
+/*style for Header and Footer ends here*/
+
+.heroSection{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 20vh;
+    padding-left: 15%;
+}
+
+.heroSectionBox{
+    width: 40%;
+    height: 50vh;
+    color: #fff;
+}
+
+.heroSectionBox h3{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.heroSectionBox h1{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -5vh;
+
+}
+
+section{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box1, .box2{
+    width: 35%;
+}
+
+.box1 img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.box2 h2, .box1 h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.box2 h1, .box1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -10px;
+    font-size: 40px;
+}
+
+.box2 p, .box1 p{
+    font-size: 14px;
+    margin-top: -30px;
+}
+
+.box2 button{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background-color: #2e404a;
+}
+
+.box1 blockquote{
+    background-color: #2e404a;
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    margin-left: -40px;
+    margin-top: -40px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box1 blockquote i{
+    font-size: 40px;
+    padding: 5px;
+}
+
+.box2 form{
+    border: 1px solid #ecf1f0;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box2 form input, .box2 form textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ecf1f0;
+    border: none;
+}
+
+.box2 form .button{
+    width: 150px;
+    margin-top: 20px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background-color: #2e404a;
+}
+
+.box1 ul{
+    list-style-type: none;
+    width: 70%;
+    font-size: 20px;
+}
+
+.box1 ul li{
+    display: inline;
+    padding: 10px;
+}
+
+.box1 h3{
+    padding-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box1 .fa-envelope, .box1 .fa-phone{
+
+}
